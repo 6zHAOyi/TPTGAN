@@ -44,6 +44,13 @@ Get your training speech data prepared, set the right variable in your own situa
 Get your test speech data prepared, set the right variable in your own situation.
 * run `python test.py`.
 
+### Checkpoint for resuming:
+The code saves a checkpoint after every epoch. You can set the following path variables in 'train_gan_loss2.py' from 'None' to your actual checkpoint paths to resume training.
+
+<!-- Checkpoint path variables -->
+* resume_model
+* resume_disc
+
 ## Citation:
 
 ```
