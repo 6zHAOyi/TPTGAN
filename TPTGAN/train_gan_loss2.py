@@ -327,9 +327,7 @@ for epoch in range(start_epoch, max_epochs):
         est_mag = torch.sqrt(est_real ** 2 + est_imag ** 2)
         clean_mag = torch.sqrt(clean_real ** 2 + clean_imag ** 2)
         noisy_mag = torch.sqrt(noisy_real ** 2 + noisy_imag ** 2)
-        '''
-        可能存在的问题：audiodata中的信号长度怎么取，以及istft后信号长度可能短于原信号，导致loss计算和评价指标计算错误
-        '''
+        
         est_audio = torch.istft(est_spec_uncompress, frame_size, frame_shift,
                                 window=torch.hamming_window(frame_size).cuda(), onesided=True)  # [batch_size, sig_len]
         # LOSS
