@@ -1,0 +1,4 @@
+/training_mix/train_mix_1
+/training_mix/train_mix_2
+/training_mix/train_mix_3
+...
