@@ -6,8 +6,6 @@ This is the repository for our paper (ICONIP2023).
 - [Overview](#overview)
 - [Dependencies](#dependencies)
 - [How to start](#how-to-start)
-- [Experimental Results](#experimental-result)
-- [Code Structure](#code-structure)
 - [Citation](#citation)
 ## OverView
 ![TPTGAN Architecture](./figures/TPTGAN.png)
@@ -31,17 +29,18 @@ If you want to change the two path transformer block into conformer block which 
 
 ## Trained models:
 * Under trained_models/, we have a trained model. -->
-## Dataset
+## How to start:
+### Dataset
 1. Download VoiceBank+Demand dataset.
 2. In our code, we organise every noisy speech and its according clean speech in a single file using h5py.
 3. Generate the index .txt file whose every row represents the path of a speech pair generated in step 2.
 
 Examples can be find in '/examples' folder.
-## Training:
+### Training:
 Get your training speech data prepared, set the right variable in your own situation.
 * run `python train_gan_loss2.py`.
 
-## Test:
+### Test:
 Get your test speech data prepared, set the right variable in your own situation.
 * run `python test.py`.
 
