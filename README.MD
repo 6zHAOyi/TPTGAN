@@ -2,6 +2,7 @@
 《Two-Path Transformer-Based Generative Adversarial Network Using Joint Magnitude Masking and Complex Spectral Mapping for Speech Enhancement》
 
 This is the repository for our paper (ICONIP2023).
+If you would like to use this codebase, or otherwise found our work valuable, please give us a star. Thank you!
 ## Table of Contents
 - [Overview](#overview)
 - [Dependencies](#dependencies)
